@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    background: linear-gradient( #253832, #020705);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app-wrapper {
+    background-color: #379683;
+    min-width: 450px;
+    min-height: 650px;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 3px 6px 60px #000;
+    margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header {
+    color: #f3fcf9;
+    text-align: center;
+    margin: 15px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.task-input {
+    outline: none;
+    width: 260px;
+    padding: 15px;
+    margin-right: 25px;
+    font-size: 20px;
+    color: #ccc;
+    background-color: #010704;
+    border: 1px solid #ebf3f3;
+    border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-add {
+    width: 70px;
+    padding: 15px 15px;
+    font-size: 20px;
+    border-radius: 7px;
+    border: 0;
+    background-color: #fa6e6e;
+    cursor: pointer;
+    color: #f3fcf9;
+}
+
+.list-item {
+    display: flex;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    max-height: 30px;
+}
+
+.button-complete,
+.button-delete,
+.button-edit {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 28px;
+    border-radius: 50%;
+}
+
+.button-complete {
+    color: #df2e2e;
+    margin-right: 10px;
+}
+
+.button-edit {
+    color: #f3fcf9;
+    margin-right: 10px;
+}
+
+.complete {
+    text-decoration-style: solid;
+    text-decoration-line: line-through;
+    text-decoration-color: #f01414;
+    opacity: 0.6;
+}
+
+.list {
+    width: 220px;
+    background-color: #379683;
+    border: none;
+    color: #f3fcf9;
+    font-size: 20px;
+    padding-left: 10px;
+    margin-left: 15px;
+}
+
+input:focus,
+button:focus {
+    outline: none;
 }
